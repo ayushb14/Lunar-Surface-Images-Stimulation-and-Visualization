@@ -1,0 +1,30 @@
+LUNAR ROVER HAZARD-AWARE NAVIGATION PROJECT
+=================================================
+
+This MATLAB project simulates a lunar rover navigating across a cratered surface.
+The system creates or loads a lunar terrain image, builds a hazard model, creates
+a terrain cost map, runs A* path planning, compares with Dijkstra, and animates
+the rover mission.
+
+Main upgrades compared with a basic crater-shortest-path demo:
+1. Craters are treated as hazards rather than navigation nodes.
+2. Rover path is planned through safe terrain, not through crater centers.
+3. Cost map includes roughness, slope, shadow, and hazard clearance.
+4. A* is compared with Dijkstra to show algorithmic improvement.
+5. 2D, 3D, dashboard, CSV, and animation outputs are generated.
+
+MISSION METRICS
+Crater count: 69
+Path length: 1707.05 pixels
+Estimated energy: 2200.56 units
+Estimated mission time: 94.84 seconds
+Average route cost: 5.9268
+Average roughness: 0.0417
+Average slope: 0.0173
+Minimum hazard clearance: 1.00 pixels
+Hard hazard crossing percent: 0.00 %
+A* nodes expanded: 14156
+Dijkstra nodes expanded: 14644
+A* runtime: 0.5815 seconds
+Dijkstra runtime: 0.5840 seconds
+A* expansion reduction: 3.33 %
